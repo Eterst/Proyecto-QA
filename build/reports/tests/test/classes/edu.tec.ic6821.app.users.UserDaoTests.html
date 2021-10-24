@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class edu.tec.ic6821.app.users.UserDaoTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class edu.tec.ic6821.app.users.UserDaoTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/edu.tec.ic6821.app.users.html">edu.tec.ic6821.app.users</a> &gt; UserDaoTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.028s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">givenExistingUser_whenFindByUsername_thenReturnUser</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">givenExistingUsername_whenExistsByUsername_thenReturnTrue</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">givenNonExistingUsername_whenExistsByUsername_thenReturnFalse</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">givenNonExistingUsername_whenFindByUsername_thenReturnEmpty</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">givenUser_whenCreate_thenReturnUserWithGeneratedId</td>
+<td class="success">0.010s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2021-10-24 10:55:41.227  INFO 19710 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.tec.ic6821.app.users.UserDaoTests], using SpringBootContextLoader
+2021-10-24 10:55:41.228  INFO 19710 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [edu.tec.ic6821.app.users.UserDaoTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-10-24 10:55:41.228  INFO 19710 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [edu.tec.ic6821.app.users.UserDaoTests]: UserDaoTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-10-24 10:55:41.229  INFO 19710 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration edu.tec.ic6821.app.Application for test class edu.tec.ic6821.app.users.UserDaoTests
+2021-10-24 10:55:41.230  INFO 19710 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-10-24 10:55:41.230  INFO 19710 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@648c507a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7ea32136, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@476ac6b4, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@609836e6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6611a50f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1dc926a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1012ab83, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@311c9061, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5ace6290, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3f64e461, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3a2f0ebd, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6fe51e01]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.2.RELEASE)
+
+2021-10-24 10:55:41.240  INFO 19710 --- [    Test worker] edu.tec.ic6821.app.users.UserDaoTests    : Starting UserDaoTests on caa-81052 with PID 19710 (started by estudiante in /home/estudiante/Escritorio/Proyectos SO y QA/Proyecto-QA)
+2021-10-24 10:55:41.241  INFO 19710 --- [    Test worker] edu.tec.ic6821.app.users.UserDaoTests    : No active profile set, falling back to default profiles: default
+2021-10-24 10:55:41.342  INFO 19710 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-10-24 10:55:41.346  INFO 19710 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2021-10-24 10:55:41.392  INFO 19710 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f03bc025] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-24 10:55:41.401  INFO 19710 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$88e9885f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-24 10:55:41.403  INFO 19710 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-24 10:55:41.404  INFO 19710 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@bd26e0e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-24 10:55:41.407  INFO 19710 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$adbe2b11] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-24 10:55:41.409  INFO 19710 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-24 10:55:41.462  INFO 19710 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-10-24 10:55:41.462  WARN 19710 --- [    Test worker] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.hsqldb.jdbcDriver was not found, trying direct instantiation.
+2021-10-24 10:55:41.463  INFO 19710 --- [    Test worker] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (característica no soportada)
+2021-10-24 10:55:41.463  INFO 19710 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-10-24 10:55:41.464  INFO 19710 --- [    Test worker] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:hsqldb:mem:testdb (HSQL Database Engine 2.4)
+2021-10-24 10:55:41.475  INFO 19710 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.008s)
+2021-10-24 10:55:41.478  INFO 19710 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;PUBLIC&quot;: 0001
+2021-10-24 10:55:41.478  INFO 19710 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema &quot;PUBLIC&quot; is up to date. No migration necessary.
+2021-10-24 10:55:41.513  INFO 19710 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-10-24 10:55:41.517  INFO 19710 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-10-24 10:55:41.524  INFO 19710 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-24 10:55:41.675  WARN 19710 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-24 10:55:41.728  INFO 19710 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a715397, org.springframework.security.web.context.SecurityContextPersistenceFilter@7db410c7, org.springframework.security.web.header.HeaderWriterFilter@11bcacd9, org.springframework.web.filter.CorsFilter@6e838e27, org.springframework.security.web.authentication.logout.LogoutFilter@968bf38, edu.tec.ic6821.app.identity.config.JwtAuthTokenFilter@db48be7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37d1ba5d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43ff121a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@755e25ae, org.springframework.security.web.session.SessionManagementFilter@cd8d0a5, org.springframework.security.web.access.ExceptionTranslationFilter@1b7a2ab6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a9f705d]
+2021-10-24 10:55:41.889  INFO 19710 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-24 10:55:42.059  INFO 19710 --- [    Test worker] edu.tec.ic6821.app.users.UserDaoTests    : Started UserDaoTests in 0.827 seconds (JVM running for 7.249)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.6.1</a> at 24 oct. 2021 10:55:42</p>
+</div>
+</div>
+</body>
+</html>
