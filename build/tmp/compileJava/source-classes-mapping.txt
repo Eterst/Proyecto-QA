@@ -1,9 +1,9 @@
 edu/tec/ic6821/app/user/model/User.java
  edu.tec.ic6821.app.user.model.User
+edu/tec/ic6821/app/greetings/controller/GreetingController.java
+ edu.tec.ic6821.app.greetings.controller.GreetingController
 edu/tec/ic6821/app/user/dao/JdbcUserDao.java
  edu.tec.ic6821.app.user.dao.JdbcUserDao
-edu/tec/ic6821/app/Application.java
- edu.tec.ic6821.app.Application
 edu/tec/ic6821/app/common/EmailServiceImpl.java
  edu.tec.ic6821.app.common.EmailServiceImpl
 edu/tec/ic6821/app/user/service/UserServiceImpl.java
@@ -24,5 +24,5 @@ edu/tec/ic6821/app/common/EmailService.java
  edu.tec.ic6821.app.common.EmailService
 edu/tec/ic6821/app/user/dto/InUserDto.java
  edu.tec.ic6821.app.user.dto.InUserDto
-edu/tec/ic6821/app/greetings/controller/GreetingController.java
- edu.tec.ic6821.app.greetings.controller.GreetingController
+edu/tec/ic6821/app/Application.java
+ edu.tec.ic6821.app.Application

@@ -31,18 +31,18 @@ public class JdbcUserDao extends JdbcDaoSupport implements UserDao {
     }
 
     @Override
-    public User create(User User) {
+    public User create(User user) {
         String sql = "INSERT INTO cliente VALUES (?,?)";
 
         KeyHolder holder = new GeneratedKeyHolder();
         getJdbcTemplate().update(connection -> {
             PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-            ps.setLong(1, User.getUserId());
-            ps.setString(2, User.getName());
+            ps.setLong(1, user.getUserId());
+            ps.setString(2, user.getName());
             return ps;
         }, holder);
 
-        return new User(User.getUserId(), User.getName());
+        return new User(user.getUserId(), user.getName());
     }
 
 }
