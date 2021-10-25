@@ -1,2 +1,5 @@
+edu/tec/ic6821/app/users/UserServiceTest.java
+ edu.tec.ic6821.app.users.UserServiceTest
+ edu.tec.ic6821.app.users.UserServiceTest$UserServiceTestsConfiguration
 edu/tec/ic6821/app/ApplicationTests.java
  edu.tec.ic6821.app.ApplicationTests

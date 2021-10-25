@@ -22,9 +22,7 @@ edu/tec/ic6821/app/user/dao/UserDao.java
  edu.tec.ic6821.app.user.dao.UserDao
 edu/tec/ic6821/app/common/EmailService.java
  edu.tec.ic6821.app.common.EmailService
-edu/tec/ic6821/app/greetings/controller/GreetingController.java
- edu.tec.ic6821.app.greetings.controller.GreetingController
 edu/tec/ic6821/app/user/dto/InUserDto.java
  edu.tec.ic6821.app.user.dto.InUserDto
-edu/tec/ic6821/app/pruebaPostgres.java
- edu.tec.ic6821.app.pruebaPostgres
+edu/tec/ic6821/app/greetings/controller/GreetingController.java
+ edu.tec.ic6821.app.greetings.controller.GreetingController
