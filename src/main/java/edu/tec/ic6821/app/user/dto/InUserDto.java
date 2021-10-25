@@ -2,18 +2,20 @@ package edu.tec.ic6821.app.user.dto;
 
 
 public class InUserDto {
-    private String name;
+    private  Long userId;
+    private  String name;
 
-    private String text;
 
-
-    public InUserDto(String name, String text) {
+    public InUserDto(Long userId, String name) {
+        this.userId = userId;
         this.name = name;
-        this.text = text;
     }
 
-    public String getName() { return name; }
+    public Long getUserId() {
+        return userId;
+    }
 
-    public String getText() { return  text; }
-
+    public String getName() {
+        return name;
+    }
 }

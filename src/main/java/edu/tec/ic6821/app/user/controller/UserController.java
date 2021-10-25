@@ -17,10 +17,10 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import javax.validation.Valid;
 import java.util.Optional;
 
-//@RestController
-//@RequestMapping("/api/User")
+@RestController
+@RequestMapping("/api/User")
 public class UserController {
-/*
+
     private final UserService userService;
 
     @Autowired
@@ -29,12 +29,11 @@ public class UserController {
     @PostMapping
     public ResponseEntity<?> create(@Valid @RequestBody InUserDto inUserDto) {
         try {
-            CustomUserDetails userDetails = (CustomUserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+            //CustomUserDetails userDetails = (CustomUserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 
             Optional<User> optionalUser = userService.create(
-                    inUserDto.getName(),
-                    inUserDto.getText(),
-                    userDetails.getUserId());
+                    inUserDto.getUserId(),
+                    inUserDto.getName());
 
             return optionalUser.<ResponseEntity<?>>map(
                     (User) -> new ResponseEntity<>(
@@ -47,5 +46,5 @@ public class UserController {
             return new ResponseEntity<>(ErrorDto.from(e),
                     HttpStatus.INTERNAL_SERVER_ERROR);
         }
-    }*/
+    }
 }
